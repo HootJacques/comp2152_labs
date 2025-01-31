@@ -163,6 +163,9 @@ print("--- You have a strong player: " + str((combat_strength + health_points) >
 input("Roll for the Monster Strength (Press enter)")
 power_roll = random.choice(["Fire Magic", "Freeze Time", "Super Hearing"])
 
+#Lab4 Q3 - Increase Monster Strength
+m_combat_strength = min(6, m_combat_strength + monster_power[power_roll])
+print("The monster combat strength is: " + str(m_combat_strength) + "Using" + power_roll + "Magic Power")
 
 # Loop while the monster and the player are alive. Call fight sequence functions
 print("You meet the monster. FIGHT!!")
