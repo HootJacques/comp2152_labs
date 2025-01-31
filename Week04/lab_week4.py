@@ -173,6 +173,17 @@ print("Your belt contains:", belt)
 belt.sort()
 print("Your belt items sorted as: ", belt)
 
+#Lba4 Q8 - Use the belt items
+print("You see a Monster, Quickly use your first item!")
+first_item = belt.pop(0)
+if first_item in good_loot_options:
+    health_points = min(6, (health_points + 2))
+    print(f"You used {first_item}! You have {health_points} health points now.")
+elif first_item in bad_loot_options:
+    health_points = max(0, (health_points - 2))
+    print(f"You used {first_item}! You have {health_points} health points now.")
+else:
+    print(f"Item was not helpful :( You have {health_points} health points ")
 
 input("Analyze the roll (Press enter)")
 # Compare Player vs Monster's strength
