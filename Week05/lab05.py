@@ -239,4 +239,4 @@ if not input_invalid:
     if not input_invalid:
         stars_display = "*" * num_stars
         # Lab 5 - Question 2:
-        print(f"    |    Hero {short_name} gets {num_stars} stars")
+        print(f"    |    Hero {short_name} gets <{num_stars}> stars")
