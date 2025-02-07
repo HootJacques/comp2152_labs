@@ -3,6 +3,7 @@ import random
 
 # Put all the functions into another file and import them
 import functions_lab05
+from Week05.functions_lab05 import inception_dream
 
 # Game Flow
 # Define two Dice
@@ -171,7 +172,7 @@ if not input_invalid:
     # Lab 5: Call Recursive function
     print("    |", end="    ")
     num_dream_lvls = input("How many dream levels do you want to go down?")
-    if:
+    if inception_dream(num_dream_lvls):
         print("combat strength: " + str(combat_strength))
         print("health points: " + str(health_points))
 
