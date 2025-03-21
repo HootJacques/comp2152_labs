@@ -14,7 +14,7 @@ class Person:
         self.__name = new_name
 
     def __del__(self):
-        print("Deleting Person Object")
+        print("Deleting Person Object with Garbage Collector")
 
 
 person1 = Person("Mike", 57, 187)
@@ -22,3 +22,4 @@ person1 = Person("Mike", 57, 187)
 print(f"Person Name: {person1.name}")
 person1.name = "Name Override"
 print(f"Person Name: {person1.name}")
+#print(f"Test: {person1.public__prop}")
